@@ -1,0 +1,158 @@
+p {
+    margin-bottom: 50px;
+}
+
+div {
+    text-transform: lowercase;
+}
+
+button {
+    color: #007AFF;
+}
+
+#subtitle {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+#icon-github {
+    margin-bottom: 15px;
+}
+
+#icon-linkedin {
+    margin-bottom: 15px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 10px;
+}
+
+#icon-github:hover {
+    opacity: .3;
+}
+
+#icon-linkedin:hover {
+    opacity: .3;
+}
+
+
+.blue {
+    background-color: #007AFF!important;
+}
+
+.white {
+    background-color: white!important;
+}
+
+.jumbotron {
+    background-color: white;
+    color: #007AFF;
+}
+
+.jumbotron button {
+    border-radius: 2px;
+}
+
+.jumbotron h1 {
+    font-size: 69pt;
+}
+
+.jumbotron p {
+    padding: 0px 2px;
+}
+
+.jumbotron q {
+    display: none;
+    padding: 0px 5px;
+}
+
+.hidden {
+    display: none!important;
+}
+.overlay {
+    background-color: #007AFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+.links {
+    text-align: center;
+}
+.links a{
+    font-size: 36pt;
+    color: white;
+    display: list-item;
+    list-style: none;
+    padding: 5px 0px;
+}
+
+.nav-container {
+    padding: 20px 0px;
+}
+
+.nav-container p {
+    opacity: 1;
+}
+
+
+.hamburger {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 10;
+    position: sticky;
+  }
+
+.hamburgerClick{
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hamburgerOn {
+    background-color: none;
+    color:white;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #007AFF;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
