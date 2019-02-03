@@ -1,13 +1,13 @@
-p {
-    margin-bottom: 50px;
-}
-
 div {
     text-transform: lowercase;
 }
 
 button {
     color: #007AFF;
+}
+
+q {
+    color: black;
 }
 
 #subtitle {
@@ -47,7 +47,13 @@ button {
     opacity: .3;
 }
 
-
+.emoji {
+    font-size: 80px;
+}
+.emoji:hover {
+    text-decoration: none;
+    font-size: 60px;
+}
 .blue {
     background-color: #007AFF!important;
 }
@@ -101,13 +107,15 @@ button {
     display: list-item;
     list-style: none;
     padding: 5px 0px;
+
 }
 
 .nav-container {
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
 .nav-container p {
+    font-size: 18pt;
     opacity: 1;
 }
 
