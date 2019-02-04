@@ -9,18 +9,33 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="./styles/mystyle.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>ScrollReveal().reveal('.eventBox');</script>
+    <script></script>
     <title>About Franky Dong</title>
 </head>
 
 <body>
+        <div class="header">
+                <div class="hamburger">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <span class="hamburgerClick"></span>
+                </div>
+            </div>
     <div class="jumbotron">
-        <h1>About Me</h1>
         <div class="container">
+            <h1>About Me <span style="font-size:50px;">&#x1F4BB;&#x1F436;</span></h1>
             <div class="row">
-                <div class="col-sm-3"><img src="./franky/frankyplussushi.png" alt="Picture of Franky and Sushi @ SFMOMA"
-                        width="300"></div>
-                <div class="col-sm-9">
+                <div class="col-4"><img src="./images/frankyplussushi.png" alt="Picture of Franky and Sushi @ SFMOMA"
+                        width="300" class="responsive">
+                </div>
+                <div class="col-8">
                     <p>My name is Franky Dong and I’m an aspiring Full Stack Engineer with a broad technical skill set
                         and strong
                         attention to detail. I'm a willing learner with a continuous desire to build, grow, and excel.
@@ -29,97 +44,119 @@
                         and APIs. In
                         addition to my engineering skills, I also have knowledge in cryptocurrency and blockchain
                         technology.</p>
-                    <p>When I’m not programming, I’m hanging out with dog Sushi and working on my car projects.</p>
+
+                    <p>When I’m not programming, I’m hanging out with service dog <strong>Sushi</strong> (actually always with her..) and working on my car projects.
+                        I'm born and raised in San Jose but moved to San Francisco to study Computer Science at San
+                        Francisco State University. I have had the fortunate pleasure of discovering the world with my
+                        A.D.H.D. I love sharing my learning experiences with others,
+                        and hope to learn and teach as much as I can from this extraordinarily beautiful world that we
+                        all live in together.</p>
+                    <p></p>
+                    <p>Check out the timeline I created below to show some important events in my educational career.</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="timeline">
-        <div class="container left">
+
+    <div class="timeline" onscroll="displayAnimate">
+        <div class="eventBox left">
             <div class="content">
                 <h2>2019</h2>
                 <p>Analysis Of Algorithms + Operating Systems + Software Engineering</p>
             </div>
         </div>
-        <div class="container left">
+        <div class="eventBox left">
             <div class="content">
                 <h2>2018</h2>
                 <p>Created CryptoClub @ SFSU</p>
                 <p>Took Machine Structures<p>
             </div>
         </div>
-        <div class="container left">
+        <div class="eventBox left">
             <div class="content">
                 <h2>2017</h2>
                 <p>Discovered My Working Memory Learning Disability</p>
                 <p>Learned Java + Software Development</p>
             </div>
         </div>
-        <div class="container left">
+        <div class="eventBox left">
             <div class="content">
                 <h2>2016</h2>
                 <p>Started SFSU, Tipping Point of Educational Career</p>
             </div>
         </div>
-        <div class="container left">
+        <div class="eventBox left">
             <div class="content">
                 <h2>2015</h2>
                 <p>Started Job @ Innovestors Real Estate Solutions + Discovered My A.D.H.D.</p>
             </div>
         </div>
-        <div class="container left">
+        <div class="eventBox left">
             <div class="content">
                 <h2>2014</h2>
                 <p>Took Data Structures & Algorithms</p>
             </div>
         </div>
-        <div class="container left right">
+        <div class="eventBox right">
             <div class="content">
                 <h2>2013</h2>
                 <p>Started Internship @ Salas O' Brien</p>
                 <p>Learned C++</p>
             </div>
         </div>
-        <div class="container left">
+        <div class="eventBox left">
             <div class="content">
                 <h2>2012</h2>
                 <p>Graduated HS + Started DeAnza Community College</p>
             </div>
         </div>
-        <div class="container left">
+        <div class="eventBox left">
             <div class="content">
                 <h2>2011</h2>
                 <p>Enrolled in Comp Sci 101</p>
             </div>
         </div>
-        <div class="container right">
+        <div class="eventBox left">
             <div class="content">
                 <h2>2010</h2>
                 <p>Learned HTML, CSS, Intro to Web Design</p>
             </div>
         </div>
-        <div class="container right">
+        <div class="eventBox left">
             <div class="content">
                 <h2>2009</h2>
                 <p>Took Intro to Computers - Basic Typing</p>
             </div>
         </div>
-        <div class="container left">
+        <div class="eventBox left">
             <div class="content">
                 <h2>2008</h2>
                 <p>Started HS CompSci Magnet Program</p>
             </div>
         </div>
-        <div class="container left">
+        <div class="eventBox left">
             <div class="content">
                 <h2>1999</h2>
                 <p>1st Interaction w/ Comp Sci</p>
             </div>
         </div>
     </div>
-    
-</div>
 
+    <footer id="footer" class="container-fluid text-right">
+            <a id="icon-github" href="https://github.com/frankspanks"><img src="./images/github-logo.png" alt="GitHub Icon"
+                    width="40" height="40"></a>
+            <a id="icon-linkedin" href="https://linkedin.com/in/hoangmdong"><img src="./images/linkedin-logo.png" alt="LinkedIn Icon"
+                    width="40" height="40"></a>
+        </footer>
+    
+        <div class="overlay hidden">
+            <div class="links">
+                <a href="./portfolio.htm">Portfolio</a>
+                <a href="./resume.htm">Resume</a>
+                <a href="./about.htm">About Me</a>
+                <a href="mailto:franky@frankydong.com">Contact Me</a>
+            </div>
+        </div>
 </body>
 
 </html>

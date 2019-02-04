@@ -10,7 +10,60 @@ q {
     color: black;
 }
 
+.responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+/* Hamburger Menu */
+.hamburger {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 10;
+    position: sticky;
+  }
+
+.hamburgerClick{
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hamburgerOn {
+    color:white;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #007AFF;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+/*end Hamburger Menu*/
+
 #subtitle {
+    color:#F1765E;
     animation-duration: 3s;
     animation-name: slidein;
   }
@@ -26,27 +79,6 @@ q {
     }
   }
 
-#icon-github {
-    margin-bottom: 15px;
-}
-
-#icon-linkedin {
-    margin-bottom: 15px;
-}
-
-#footer {
-    position: fixed;
-    bottom: 10px;
-}
-
-#icon-github:hover {
-    opacity: .3;
-}
-
-#icon-linkedin:hover {
-    opacity: .3;
-}
-
 .emoji {
     font-size: 80px;
 }
@@ -54,17 +86,10 @@ q {
     text-decoration: none;
     font-size: 60px;
 }
-.blue {
-    background-color: #007AFF!important;
-}
-
-.white {
-    background-color: white!important;
-}
 
 .jumbotron {
     background-color: white;
-    color: #007AFF;
+    color: #000000;
 }
 
 .jumbotron button {
@@ -84,6 +109,7 @@ q {
     padding: 0px 5px;
 }
 
+/* overlay */
 .hidden {
     display: none!important;
 }
@@ -109,6 +135,7 @@ q {
     padding: 5px 0px;
 
 }
+/* end overlay */
 
 .nav-container {
     padding: 10px 0px;
@@ -119,48 +146,34 @@ q {
     opacity: 1;
 }
 
-
-.hamburger {
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    top: 10px;
-    left: 10px;
-    display: inline-block;
-    cursor: pointer;
-    z-index: 10;
-    position: sticky;
-  }
-
-.hamburgerClick{
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.blue {
+    background-color: #007AFF!important;
 }
 
-.hamburgerOn {
-    background-color: none;
-    color:white;
+.white {
+    background-color: white!important;
 }
-  
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #007AFF;
-    margin: 6px 0;
-    transition: 0.4s;
+/*end overlay */
+
+/*footer styling*/
+#icon-github {
+    margin-bottom: 15px;
 }
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+
+#icon-linkedin {
+    margin-bottom: 15px;
 }
-  
-.change .bar2 {opacity: 0;}
-  
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+
+#footer {
+    position: fixed;
+    bottom: 10px;
 }
+
+#icon-github:hover {
+    opacity: .3;
+}
+
+#icon-linkedin:hover {
+    opacity: .3;
+}
+/* end footer styling*/
