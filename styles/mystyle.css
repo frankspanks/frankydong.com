@@ -6,9 +6,27 @@ button {
     color: #007AFF;
 }
 
-q {
-    color: black;
+.timeline{
+    display:none;
 }
+
+.timeline h1 {
+    color: #007AFF;
+}
+
+.timeline h2 {
+    color: #007AFF;
+}
+
+.content ul {
+    color: #007AFF;
+    list-style: none;
+}
+
+.timeline.hidden {
+    display:none;
+}
+
 
 .responsive {
     width: 100%;
@@ -26,7 +44,7 @@ q {
     display: inline-block;
     cursor: pointer;
     z-index: 10;
-    position: sticky;
+    position: fixed;
   }
 
 .hamburgerClick{
@@ -97,6 +115,8 @@ q {
 }
 
 .jumbotron h1 {
+    text-align:center;
+    color: #007AFF;
     font-size: 69pt;
 }
 
@@ -123,6 +143,7 @@ q {
     bottom: 0px;
     left: 0px;
     right: 0px;
+    z-index: 1;
 }
 .links {
     text-align: center;
