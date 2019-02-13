@@ -1,3 +1,12 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  /*
+  display: flex
+  width: = flex-basis:
+  */
+
 div {
     text-transform: lowercase;
 }
@@ -6,7 +15,18 @@ button {
     color: #007AFF;
 }
 
+.resume {
+    padding: 10px;
+}
+
+#tools {
+    text-align: center;
+}
+
+
+
 .timeline{
+    margin: 0% 10%;
     display:none;
 }
 
@@ -106,22 +126,21 @@ button {
 }
 
 .jumbotron {
+    margin: 20px 12%;
     background-color: white;
     color: #000000;
 }
 
 .jumbotron button {
     border-radius: 2px;
+    border: none;
+    background: none;
 }
 
 .jumbotron h1 {
     text-align:center;
     color: #007AFF;
     font-size: 69pt;
-}
-
-.jumbotron p {
-    padding: 0px 2px;
 }
 
 .jumbotron q {

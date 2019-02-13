@@ -1,27 +1,57 @@
 <!doctype html>
+
 <html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/mystyle.css">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134421540-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'UA-134421540-1');
+        </script>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/mystyle.css">
         <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script>
+            var i = 0;
+            var txt = 'Franky Minh Dong';
+            var speed = 50;
+            function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("fmd").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+                /*
+                if (i > txt.length) {
+                    document.getElementById("name").innerHTML -= txt.charAt(i);
+                    i--;
+                    setTimeout(typeWriter, speed);
+                }
+                */
+            }
+        </script>
+        <title>Franky Dong's Resume</title>
+    </head>
 
-    <title>Franky Dong's Resume</title>
-</head>
-<body onload="typeWriter()">
+    <body onload="typeWriter()">
         <div class="header">
             <div class="hamburger">
                 <div class="bar1"></div>
@@ -30,147 +60,188 @@
                 <span class="hamburgerClick"></span>
             </div>
         </div>
-    <div class="jumbotron text-center">
-        <h1>Franky Dong</h1>
-        <h2>Aspiring Full-Stack Engineer</h2>
-        <p>A passionate learner with continuous desire to build, grow, and excel. Software Engineer with a broad
-            technical skill set and strong attention to detail. Interested in building large-scale web application
-            systems based on cutting edge technologies, services and APIs.</p>
-        <button><a href="resume_dongfranky.pdf" download>Download Resume</a></button>
-    </div>
+        <section>
+            <div class="jumbotron text-center">
+                <div class="row">
+                    <div class="col">
+                        <h1 id="fmd">&#x1F468;&#x200D;&#x1F4BB; </h1>
+                        <h2 id="subtitle">Software Developer in Training</h2>
+                        <p>A passionate learner with continuous desire to build, grow, and excel. Software Engineer with
+                            a
+                            broad
+                            technical skill set and strong attention to detail. Interested in building large-scale web
+                            application
+                            systems based on cutting edge technologies, services and APIs.</p>
+                        <div id="tools" class="container" data-aos="fade-down">
+                            <div class="col">
+                                <h5>Toolset</h5>
+                            </div>
+                            <div class="col">
+                                <p>Google Chrome DevTools, Google Cloud Console, Google Drive, Xcode, Node.js, Github,
+                                    VS
+                                    Code, Bootstrap, React, Sketch, Human Interface Guidelines, AutoCAD, Microsoft
+                                    Office
+                                    Suite</p>
+                            </div>
+                        </div>
+                        <button href="../resume_dongfranky.pdf" download>Download Resume</button>
+                    </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h3>Education</h3>
-            </div>
-            <div class="col">
-                <h5>2017 - Expected May 2019</h5>
-                <p>
-                    Bachelor of Science, Computer Science
-                    San Francisco State University, San Francisco, CA
-                </p>
-            </div>
-            <div class="col">
-                <h5>2013 - 2017</h5>
-                <p>
-                    Associate of Art, Liberal Arts in Science and Engineering
-                    De Anza Community College, Cupertino, CA
-                </p>
-            </div>
-            <div class="col"></div>
-        </div>
-    </div>
+                </div>
+        </section>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <h3>Work Experience</h3>
-            </div>
-            <div class="col-sm-3">
-                <h5>2015 - Present</h5>
-                <p>
-                    Information Technology Consultant
-                    Innovestors San Jose, CA
-                    Managed 22 different trusts accounts with separate residential properties around the United States
-                    working with fix-and-flips and trust accounts.
-                    Recruited interns and exploring investment possibilities through technical consults.
-                </p>
-            </div>
-            <div class="col-sm-3">
-                <h5>2012 - 2015</h5>
-                <p>
-                    AutoCAD Technical Support
-                    Salas O’Brien San Jose, CA
-                    Provided timely, friendly and efficient technical assistance to Salas O’Brien customers on a
-                    variety of product features, usage, installation issues. Archived Record Drawings approved by
-                    Department of State Architect and oversaw close-out packages or AT&T HVAC drawings.
-                </p>
-            </div>
-            <div class="col-sm-3">
-                <h5>2011 - 2012</h5>
-                <p>
-                    Information Technology Specialist
-                    Peak Performance Chiropractic San Jose, CA
-                    Developed customized solutions within the platform to support critical business functions and meet
-                    management, and program objectives and goals.
-                    Monitored the network firewall, assessing the functionality of the network routers, ensuring all
-                    Internet security software is updated regularly.</p>
-            </div>
-        </div>
-    </div>
+        <section class="resume">
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <h3>Skills</h3>
-            </div>
-            <div class="col-sm-3">
-                <h5>Languages</h5>
-                <p>English(Fluent), Vietnamese(Fluent), C++, C, HTML5, CSS, Java, Javascript, </p>
-            </div>
-            <div class="col-sm-3">
-                <h5>Personal</h5>
-                <p>Team Player, Loyal, Problem-Solver, Determined, Persistent, Flexible, Eager Learner</p>
-            </div>
-            <div class="col-sm-3">
-                <h5>Technical</h5>
-                <p>Data Structures and Algorithms, UI/UX Design Fundamentals, Responsive Design, Software Development,
-                    Software Engineering, Computer Organization, Programming Methodology, Theory of Computing, Data Analysis, Probability</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h3>Tools</h3>
-            </div>
-            <div class="col">
-                    <p>Google Chrome DevTools, Google Cloud Console, Google Drive, Xcode, Node.js, Github, VS Code, Bootstrap, React, Sketch, Human Interface Guidelines, AutoCAD, Microsoft Office Suite</p>
-            </div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <br>
-        </div>
-    </div>
+            <div class="container">
+                <div class="row" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-throttledelay="40">
+                    <div class="col">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="col">
+                        <h5>2017 - Expected May 2019</h5>
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h3>Organizations</h3>
-            </div>
-            <div class="col">
-                <h5>2018 - Present</h5>
-                <p>President & Founder, Cryptoclub
-                San Francisco State University</p>
-            </div>
-            <div class="col">
-                <h5>2008 - Present</h5>
-                <p>Member,
-                Associates of Vietnam Veterans of America Chapter 201</p>
-            </div>
-            <div class="col"></div>
-        </div>
-        <div class="overlay hidden">
-                <div class="links">
-                    <a href="./index.htm">Home</a>
-                    <a href="./portfolio.htm">Portfolio</a>
-                    <a href="./resume.htm">Resume</a>
-                    <a href="./about.htm">About Me</a>
-                    <a href="mailto:franky@frankydong.com">Contact Me</a>
+                        <h6>Bachelor of Science, Computer Science</h6>
+                        <p>San Francisco State University - San Francisco, CA
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h5>2013 - 2017</h5>
+
+                        <h6>Associate of Art, Liberal Arts in Science and Engineering</h6>
+                        <p>De Anza Community College - Cupertino, CA
+                        </p>
+                    </div>
+                    <div class="col"></div>
                 </div>
             </div>
-    </div>
 
-    <footer id="footer" class="container-fluid text-right">
-            <a id="icon-github" href="https://github.com/frankspanks"><img src="./images/github-logo.png" alt="GitHub Icon"
-                    width="40" height="40"></a>
-            <a id="icon-linkedin" href="https://linkedin.com/in/hoangmdong"><img src="./images/linkedin-logo.png" alt="LinkedIn Icon"
-                    width="40" height="40"></a>
-        </footer>
+            <div class="container">
+                <div class="row" data-aos="fade-up">
+                    <div class="col-sm-3">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>2015 - Present</h5>
 
-</body>
+                        <h6>Information Technology Consultant</h6>
+                        <p>Innovestors - San Jose, CA</p>
+                        <p>
+                            Managed 22 different trusts accounts with separate residential properties around the United
+                            States
+                            working with fix-and-flips and trust accounts.
+                            Recruited interns and exploring investment possibilities through technical consults.
+                        </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>2012 - 2015</h5>
+
+                        <h6>AutoCAD Technical Support</h6>
+                        <p>Salas O’Brien - San Jose, CA</p>
+                        <p> Provided timely, friendly and efficient technical assistance to Salas O’Brien customers on a
+                            variety of product features, usage, installation issues. Archived Record Drawings approved
+                            by
+                            Department of State Architect and oversaw close-out packages or AT&T HVAC drawings.
+                        </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>2011 - 2012</h5>
+
+                        <h6>Information Technology Specialist</h6>
+                        <p>Peak Performance Chiropractic - San Jose, CA</p>
+                        <p>Developed customized solutions within the platform to support critical business functions
+                            and meet
+                            management, and program objectives and goals.
+                            Monitored the network firewall, assessing the functionality of the network routers, ensuring
+                            all
+                            Internet security software is updated regularly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row" data-aos="fade-down">
+                    <div class="col-sm-3">
+                        <h3>Skills</h3>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Languages</h5>
+                        <p>English(Fluent), Vietnamese(Fluent), C++, C, HTML5, CSS, Java, Javascript, </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Personal</h5>
+                        <p>Team Player, Loyal, Problem-Solver, Determined, Persistent, Flexible, Eager Learner</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Technical</h5>
+                        <p>Data Structures and Algorithms, UI/UX Design Fundamentals, Responsive Design, Software
+                            Development,
+                            Software Engineering, Computer Organization, Programming Methodology, Theory of Computing,
+                            Data Analysis, Probability</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row" data-aos="fade-down">
+                    <div class="col">
+                        <h3>Organizations</h3>
+                    </div>
+                    <div class="col">
+                        <h5>2018 - Present</h5>
+                        <p>President & Founder, Cryptoclub
+                            San Francisco State University</p>
+                    </div>
+                    <div class="col">
+                        <h5>2008 - Present</h5>
+                        <p>Member,
+                            Associates of Vietnam Veterans of America Chapter 201</p>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </section>
+        
+            <footer id="footer" class="container-fluid text-right">
+                <a id="icon-github" href="https://github.com/frankspanks"><img src="./images/github-logo.png"
+                        alt="GitHub Icon" width="40" height="40"></a>
+                <a id="icon-linkedin" href="https://linkedin.com/in/hoangmdong"><img src="./images/linkedin-logo.png"
+                        alt="LinkedIn Icon" width="40" height="40"></a>
+            </footer>
+            <div class="overlay hidden">
+                    <div class="links">
+                        <a href="./index.htm">Home</a>
+                        <a href="./portfolio.htm">Portfolio</a>
+                        <a href="./resume.htm">Resume</a>
+                        <a href="./about.htm">About Me</a>
+                        <a href="mailto:franky@frankydong.com">Contact Me</a>
+                    </div>
+                </div>
+                
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init({
+                // Global settings:
+                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                initClassName: 'aos-init', // class applied after initialization
+                animatedClassName: 'aos-animate', // class applied on animation
+                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                throttleDelay: 10, // the delay on throttle used while scrolling the page (advanced)
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 10, // offset (in px) from the original trigger point
+                delay: 10, // values from 0 to 3000, with step 50ms
+                duration: 400, // values from 0 to 3000, with step 50ms
+                easing: 'ease', // default easing for AOS animations
+                once: false, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'bottom-bottom', // defines which position of the element regarding to window should trigger the animation
+
+            });
+        </script>
+        <script src="./scripts/script.js"></script>
+    </body>
 
 </html>
 

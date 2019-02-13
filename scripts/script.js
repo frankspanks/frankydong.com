@@ -1,5 +1,4 @@
 $(function () {
-    $("#subquote").fadeIn();
     //console.log($(".hamburger"))
     function toggleHamburger(e) {
         console.log("toggle", $(".overlay"))

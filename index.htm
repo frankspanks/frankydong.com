@@ -1,82 +1,94 @@
 <!doctype html>
 <html lang="en-US">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134421540-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            gtag('config', 'UA-134421540-1');
+        </script>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/mystyle.css">
-    <script>
-        var i = 0;
-        var txt = 'Franky Minh Dong';
-        var speed = 50;
-        function typeWriter() {
-            if (i < txt.length) {
-                document.getElementById("fmd").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="google-site-verification" content="dGQJrPy6dcy6tOwYgpr7HaFpzJmHvogy_f1gF6XWK78" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./styles/mystyle.css">
+        <script>
+            var i = 0;
+            var txt = 'Franky Minh Dong';
+            var speed = 50;
+            function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("fmd").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
             }
-        }
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="./scripts/script.js"></script>
-    <title>Franky Dong's HomePage </title>
-</head>
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="./scripts/script.js"></script>
+        <title>Franky Dong's HomePage </title>
+    </head>
 
-<body onload="typeWriter()">
-    <div class="header">
-        <div class="hamburger">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <span class="hamburgerClick"></span>
+    <body onload="typeWriter()">
+        <div class="header">
+            <div class="hamburger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <span class="hamburgerClick"></span>
+            </div>
         </div>
-    </div>
-    <div class="jumbotron text-center">
-        <h1 id="fmd">&#x1F468;&#x200D;&#x1F4BB; </h1>
-        <h2 id="subtitle">Software Developer in Training</h2>
-        <p id="subquote">Cars, Coding, Crypto</p>
-        <div class="nav-container">
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <a class="emoji" href="./portfolio.htm">&#x1F4BC;<p>Portfolio</p></a>
-                </div>
-                <div class="col-auto">
-                    <a class="emoji" href="./about.htm">&#x1F699;<p>About Me</p></a>
-                </div>
-                <div class="col-auto">
-                    <a class="emoji" href="mailto:franky@frankydong.com">&#x1F4E7;<p>E-mail</p></a>
-                </div>
-                <div class="col-auto">
-                    <a class="emoji" href="./resume.htm">&#x1F4C4;<p>Resume</p></a>
+        <div class="jumbotron text-center">
+            <h1 id="fmd">&#x1F468;&#x200D;&#x1F4BB; </h1>
+            <h2 id="subtitle">Software Developer in Training</h2>
+            <p id="subquote">Cars, Coding, Crypto</p>
+            <div class="nav-container">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <a class="emoji" href="./portfolio.htm">&#x1F4BC;<p>Portfolio</p></a>
+                    </div>
+                    <div class="col-auto">
+                        <a class="emoji" href="./about.htm">&#x1F699;<p>About Me</p></a>
+                    </div>
+                    <div class="col-auto">
+                        <a class="emoji" href="mailto:franky@frankydong.com">&#x1F4E7;<p>E-mail</p></a>
+                    </div>
+                    <div class="col-auto">
+                        <a class="emoji" href="./resume.htm">&#x1F4C4;<p>Resume</p></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
 
-    <footer id="footer" class="container-fluid text-right">
-        <a id="icon-github" href="https://github.com/frankspanks"><img src="./images/github-logo.png" alt="GitHub Icon"
-                width="40" height="40"></a>
-        <a id="icon-linkedin" href="https://linkedin.com/in/hoangmdong"><img src="./images/linkedin-logo.png" alt="LinkedIn Icon"
-                width="40" height="40"></a>
-    </footer>
+        <footer id="footer" class="container-fluid text-right">
+            <a id="icon-github" href="https://github.com/frankspanks"><img src="./images/github-logo.png"
+                    alt="GitHub Icon" width="40" height="40"></a>
+            <a id="icon-linkedin" href="https://linkedin.com/in/hoangmdong"><img src="./images/linkedin-logo.png"
+                    alt="LinkedIn Icon" width="40" height="40"></a>
+        </footer>
 
-    <div class="overlay hidden">
-        <div class="links">
-            <a href="./index.htm">Home</a>
-            <a href="./portfolio.htm">Portfolio</a>
-            <a href="./resume.htm">Resume</a>
-            <a href="./about.htm">About Me</a>
-            <a href="mailto:franky@frankydong.com">Contact Me</a>
+        <div class="overlay hidden">
+            <div class="links">
+                <a href="./index.htm">Home</a>
+                <a href="./portfolio.htm">Portfolio</a>
+                <a href="./resume.htm">Resume</a>
+                <a href="./about.htm">About Me</a>
+                <a href="mailto:franky@frankydong.com">Contact Me</a>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 
 </html>

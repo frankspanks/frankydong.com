@@ -2,45 +2,31 @@
 <html lang="en">
 
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134421540-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-134421540-1');
+        </script>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
+
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-            <link rel="stylesheet" href="./styles/mystyle.css">
-            <script>
-                var i = 0;
-                var txt = 'Franky Minh Dong';
-                var speed = 50;
-                function typeWriter() {
-                    if (i < txt.length) {
-                        document.getElementById("fmd").innerHTML += txt.charAt(i);
-                        i++;
-                        setTimeout(typeWriter, speed);
-                    }
-                }
-            </script>
-            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                crossorigin="anonymous"></script>
-            <script src="./scripts/script.js"></script>
-            <title>Franky Dong's HomePage </title>
-            <!--
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
             integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./styles/mystyle.css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
-        <style>
-            .timeline{
-                margin: 0% 10%;
-                
-            }
-            button {
-                border: none;
-                background: none;
-            }
-        </style>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+        <!-- AOS scroll fade CSS effects-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <title>About Franky Dong</title>
     </head>
 
@@ -55,16 +41,18 @@
         </div>
         <div class="jumbotron">
             <div class="container">
-                <h1><span style="font-size:60px;">&#x1F436;</span>About Me<span style="font-size:45px;">&#x1F4BB;</span></h1>
+                <h1><span style="font-size:60px;">&#x1F436;</span>About Me<span style="font-size:45px;">&#x1F4BB;</span>
+                </h1>
                 <div class="row">
-                    <div class="col-4"><img src="./images/frankyplussushi.png" alt="Picture of Franky and Sushi @ SFMOMA"
-                            width="300" class="responsive">
+                    <div class="col-4"><img src="./images/frankyplussushi.png"
+                            alt="Picture of Franky and Sushi @ SFMOMA" width="300" class="responsive">
                     </div>
                     <div class="col-8">
                         <p>My name is Franky Dong and I’m an aspiring Full Stack Engineer with a broad technical skill
                             set
                             and strong
-                            attention to detail. I'm a passionate and willing learner with a continuous desire to build, grow, and
+                            attention to detail. I'm a passionate and willing learner with a continuous desire to build,
+                            grow, and
                             excel.
                             I'm interested
                             in building large-scale web application systems based on cutting edge technologies,
@@ -84,24 +72,25 @@
                         <p>Some cars that I have owned over the years... and currently.</p>
                         <p></p>
                         <ul>
-                                <li>1947 Jeep Willys Overland</li>
-                                <li>1975 Myers Manx Buggy</li>
-                                <li>1990 Toyota Pickup</li>
-                                <li>1995 Nissan 240sx</li>
-                                <li>1997 Toyota RAV4</li>
-                                <li>1999 Lexus GS400</li>
-                                <li>2000 BMW 328i</li>
-                                <li>2000 BMW 528i</li>
-                                <li>2000 Mazda Miata Special Edition</li>
-                                <li>2000 Mazda Miata</li>
-                                </ul>
+                            <li>1947 Jeep Willys Overland</li>
+                            <li>1975 Myers Manx Buggy</li>
+                            <li>1990 Toyota Pickup</li>
+                            <li>1995 Nissan 240sx</li>
+                            <li>1997 Toyota RAV4</li>
+                            <li>1999 Lexus GS400</li>
+                            <li>2000 BMW 328i</li>
+                            <li>2000 BMW 528i</li>
+                            <li>2000 Mazda Miata Special Edition</li>
+                            <li>2000 Mazda Miata</li>
+                        </ul>
                         <p>Check out the timeline I created below to show some important events in my educational
                             career.</p>
                     </div>
                 </div>
             </div>
-            <p id="showIcon" style="font-size:100pt;text-align:center;"><button type="button" 
-onclick="document.getElementById('timelineDisplay').style.display = 'block'">&lt;click here for more&gt;</button></p>
+            <p id="showIcon" style="font-size:69pt;text-align:center;"><button type="button"
+                    onclick="document.getElementById('timelineDisplay').style.display = 'block'">&lt;click here for
+                    more&gt;</button></p>
         </div>
 
         <!-- 
@@ -127,13 +116,15 @@ onclick="document.getElementById('timelineDisplay').style.display = 'block'">&lt
                 <div class="col">
                     <div class="eventBox right" data-aos="fade-left">
                         <div class="2ndcontent">
-                            <p>My true awakening as a software developer with the aid of my amazing girlfriend, <a href="http://www.meganxyxx.com">Megan
+                            <p>My true awakening as a software developer with the aid of my amazing girlfriend, <a
+                                    href="http://www.meganxyxx.com">Megan
                                     Tran</a>, an
                                 amazing UI/UX designer. She helped literally see all my personality as potential to
                                 help me create amazing products. I realized that although I always knew I struggled
                                 with programming and school because of my disabilities, they helped shaped my
                                 character. I now see my disabilities as a driving force for growing and learning. I am
-                                super excited to finish my Bachelors of Science @ San Francisco State University, and start my
+                                super excited to finish my Bachelors of Science @ San Francisco State University, and
+                                start my
                                 career by creating an impactful imprint in the industry.</p>
                         </div>
                     </div>
@@ -386,7 +377,8 @@ onclick="document.getElementById('timelineDisplay').style.display = 'block'">&lt
                     <div class="eventBox right" data-aos="fade-left">
                         <div class="2ndcontent">
                             <p>I started Silver Creek High School as a Computer Science magnet student and found out
-                                that I had knack for computers from helping others with their hardware/software issues.</p>
+                                that I had knack for computers from helping others with their hardware/software issues.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -414,30 +406,26 @@ onclick="document.getElementById('timelineDisplay').style.display = 'block'">&lt
             </div>
         </div>
         <footer id="footer" class="container-fluid text-right">
-            <a id="icon-github" href="https://github.com/frankspanks"><img src="./images/github-logo.png" alt="GitHub Icon"
-                    width="40" height="40"></a>
-            <a id="icon-linkedin" href="https://linkedin.com/in/hoangmdong"><img src="./images/linkedin-logo.png" alt="LinkedIn Icon"
-                    width="40" height="40"></a>
+            <a id="icon-github" href="https://github.com/frankspanks"><img src="./images/github-logo.png"
+                    alt="GitHub Icon" width="40" height="40"></a>
+            <a id="icon-linkedin" href="https://linkedin.com/in/hoangmdong"><img src="./images/linkedin-logo.png"
+                    alt="LinkedIn Icon" width="40" height="40"></a>
         </footer>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
-        <script src="./scripts/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>AOS.init();
-        </script>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+        <script>AOS.init();</script>
         <script src="./scripts/script.js"></script>
 
         <div class="overlay hidden">
-                <div class="links">
-                    <a href="./index.htm">Home</a>
-                    <a href="./portfolio.htm">Portfolio</a>
-                    <a href="./resume.htm">Resume</a>
-                    <a href="./about.htm">About Me</a>
-                    <a href="mailto:franky@frankydong.com">Contact Me</a>
-                </div>
+            <div class="links">
+                <a href="./index.htm">Home</a>
+                <a href="./portfolio.htm">Portfolio</a>
+                <a href="./resume.htm">Resume</a>
+                <a href="./about.htm">About Me</a>
+                <a href="mailto:franky@frankydong.com">Contact Me</a>
             </div>
+        </div>
     </body>
 
 </html>
